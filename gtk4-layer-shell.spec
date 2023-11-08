@@ -52,6 +52,6 @@ development files for %{name}.
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{apiver}*
-%{_libdir}/girepository-1.0/GtkLayerShell-%{apiver}.?.typelib
+#{_libdir}/girepository-1.0/GtkLayerShell-%{apiver}.?.typelib
 
 %files -n %{devname}
