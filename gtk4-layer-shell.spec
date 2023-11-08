@@ -61,3 +61,4 @@ development files for %{name}.
 %{_datadir}/gir-1.0/Gtk4LayerShell-1.0.gir
 %{_datadir}/vala/vapi/gtk4-layer-shell-0.deps
 %{_datadir}/vala/vapi/gtk4-layer-shell-0.vapi
+%{_includedir}/gtk4-layer-shell/gtk4-layer-shell.h
