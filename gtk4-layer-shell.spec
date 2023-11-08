@@ -1,19 +1,19 @@
 %global apiver  0
-%define libname %mklibname %{name} %{apiver}
+%define libname %mklibname %{name}
 %define devname %mklibname -d %{name}
 
 Name:           gtk4-layer-shell
-Version:        0.8.1
+Version:        1.0.2
 Release:        1
-Summary:        Library to create components for Wayland using the Layer Shell
+Summary:        Library to create components for Wayland and GTK4 using the Layer Shell
 
 License:        MIT
-URL:            https://github.com/wmww/gtk-layer-shell
+URL:            https://github.com/wmww/gtk4-layer-shell
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig(gobject-introspection-1.0)
-BuildRequires:  pkgconfig(gtk+-wayland-3.0) >= 3.22.0
+BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(wayland-client) >= 1.10.0
 BuildRequires:  pkgconfig(wayland-scanner) >= 1.10.0
 BuildRequires:  pkgconfig(vapigen)
@@ -41,7 +41,7 @@ Requires:       %{libname} = %{version}-%{release}
 development files for %{name}.
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 %meson
