@@ -52,6 +52,12 @@ development files for %{name}.
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{apiver}*
-#{_libdir}/girepository-1.0/GtkLayerShell-%{apiver}.?.typelib
+%{_libdir}/libgtk4-layer-shell.so.1.0.2
+%{_libdir}/girepository-1.0/Gtk4LayerShell-1.0.typelib
 
 %files -n %{devname}
+%{_libdir}/libgtk4-layer-shell.so
+%{_libdir}/pkgconfig/gtk4-layer-shell-0.pc
+%{_datadir}/gir-1.0/Gtk4LayerShell-1.0.gir
+%{_datadir}/vala/vapi/gtk4-layer-shell-0.deps
+%{_datadir}/vala/vapi/gtk4-layer-shell-0.vapi
