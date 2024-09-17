@@ -52,7 +52,7 @@ development files for %{name}.
 
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{apiver}*
-%{_libdir}/libgtk4-layer-shell.so.1.0.2
+%{_libdir}/libgtk4-layer-shell.so.%{version}
 %{_libdir}/girepository-1.0/Gtk4LayerShell-1.0.typelib
 
 %files -n %{devname}
