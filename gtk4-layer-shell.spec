@@ -16,6 +16,7 @@ BuildRequires:  pkgconfig(gobject-introspection-1.0)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(wayland-client) >= 1.10.0
 BuildRequires:  pkgconfig(wayland-scanner) >= 1.10.0
+BuildRequires:  pkgconfig(wayland-protocols)
 BuildRequires:  pkgconfig(vapigen)
 
 %description
