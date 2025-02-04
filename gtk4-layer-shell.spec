@@ -54,12 +54,16 @@ development files for %{name}.
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{apiver}*
 %{_libdir}/libgtk4-layer-shell.so.%{version}
+%{_libdir}/liblayer-shell-preload.so
 %{_libdir}/girepository-1.0/Gtk4LayerShell-1.0.typelib
+%{_libdir}/girepository-1.0/Gtk4SessionLock-1.0.typelib
 
 %files -n %{devname}
 %{_libdir}/libgtk4-layer-shell.so
 %{_libdir}/pkgconfig/gtk4-layer-shell-0.pc
 %{_datadir}/gir-1.0/Gtk4LayerShell-1.0.gir
+%{_datadir}/gir-1.0/Gtk4SessionLock-1.0.gir
 %{_datadir}/vala/vapi/gtk4-layer-shell-0.deps
 %{_datadir}/vala/vapi/gtk4-layer-shell-0.vapi
 %{_includedir}/gtk4-layer-shell/gtk4-layer-shell.h
+%{_includedir}/gtk4-layer-shell/gtk4-session-lock.h
