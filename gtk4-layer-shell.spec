@@ -3,7 +3,7 @@
 %define devname %mklibname -d %{name}
 
 Name:           gtk4-layer-shell
-Version:        1.2.0
+Version:        1.3.0
 Release:        1
 Summary:        Library to create components for Wayland and GTK4 using the Layer Shell
 
